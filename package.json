@@ -43,7 +43,7 @@
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "heroku-postbuild": "npm run build",
-    "prebuild": "npm run build:clean",
+    "prebuild": "npm install",
     "prettify": "prettier --write"
   },
   "lint-staged": {
